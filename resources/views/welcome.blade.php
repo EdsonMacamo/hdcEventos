@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'HDC Events')
 
-        <link rel="stylesheet" href="/css/styles.css">
-        <script src="js/script.js"></script>
-
+@section('content')
     
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body>
         <h1>Algum titulo</h1>
         <img src="/img/banner.jpeg" alt="Banner">
 
@@ -52,6 +39,6 @@
             $name = "Joao";
             echo $name;
         @endphp
-        {{-- Este e o comentario do blade --}}
-    </body>
-</html>
+
+    @endsection
+       
